@@ -3,7 +3,11 @@
   <div class="container px-4 px-lg-5">
     <!--LOGO-->
     <div id="logo">
-      <img src=".." class="app-logo" alt="Imagotipo" />
+      <img
+        src="assets/images/homelogo/logo.jpg"
+        class="app-logo"
+        alt="Imagotipo"
+      />
     </div>
     <button
       class="navbar-toggler"
@@ -20,56 +24,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link">Inicio</a>
+          <a class="nav-link" [routerLink]="['home']">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['cuentas']" href="#portfolio"
+            >Cuentas</a
+          >
         </li>
 
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Productos
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">Baterías</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Electrodos Activos</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Reguladores</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Acumuladores</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Tablero By Pass</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Catálogo UPS
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">UPS Online</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">UPS Interactivo</a>
-            </li>
-          </ul>
-        </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -82,30 +44,32 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#">Mantenimiento UPS</a>
+              <a class="dropdown-item" href="#">Magis Tv</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Mantenimiento Eléctrico</a>
+              <a class="dropdown-item" href="#">HBO max</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                >Mantenimiento Cámaras y Control Acceso</a
-              >
+              <a class="dropdown-item" href="#">Netflix</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Diseño de Centro de Datos</a>
+              <a class="dropdown-item" href="#">Disney </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Mantenimiento Pararrayos</a>
+              <a class="dropdown-item" href="#">Otros</a>
             </li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Preguntas</a>
+          <a class="nav-link" [routerLink]="['preguntas']" href="#portfolio"
+            >Preguntas</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contactos</a>
+          <a class="nav-link" [routerLink]="['contacto']" href="#contact"
+            >Contactos</a
+          >
         </li>
       </ul>
     </div>

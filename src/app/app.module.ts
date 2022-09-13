@@ -8,6 +8,9 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { SliderpaginasComponent } from './components/sliderpaginas/sliderpaginas.component';
+import { CuentasgComponent } from './components/cuentas/cuentasg/cuentasg.component';
+import { PreguntasComponent } from './components/preguntas/preguntas.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     HomeComponent,
     FooterComponent,
     SliderComponent,
-    ContactoComponent
+    ContactoComponent,
+    SliderpaginasComponent,
+    CuentasgComponent,
+    PreguntasComponent
   ],
   imports: [
     BrowserModule,
